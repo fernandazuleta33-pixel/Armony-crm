@@ -1,92 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root{
-  /* ── HORIZONTE BRAND ── */
-  --wine:#B7C21B;
-  --wine-d:#8F9915;
-  --wine-m:#D4DB3A;
-  --wine-l:#F5F7D6;
-
-  --bg:#F6F7F2;
-  --surface:#fff;
-  --surface2:#EEF0E6;
-  --border:#E2E5D6;
-  --border2:#C9CEB8;
-
-  --text:#1A1D0F;
-  --text2:#5F6445;
-  --text3:#9AA07A;
-
-  --gold:#B7C21B;
-  --gold-l:#F5F7D6;
-
-  --green:#6FAF4B;--green-l:#EDF6E8;
-  --blue:#3E7CB1;--blue-l:#E7F0F8;
-  --orange:#D98E2B;--orange-l:#FBF1E3;
-  --red:#C94A4A;--red-l:#F8EAEA;
+  --wine:#6B1832;--wine-d:#4A1024;--wine-m:#8B2040;--wine-l:#F5EBF0;
+  --bg:#F7F4F8;--surface:#fff;--surface2:#F0ECF3;--border:#E4DDE9;--border2:#CFC5D8;
+  --text:#1E1018;--text2:#7A6575;--text3:#B0A0AA;
+  --gold:#C9A96E;--gold-l:#F5EDD9;
+  --green:#5B8A5A;--green-l:#EBF3EB;--blue:#4A7FA5;--blue-l:#E8F0F7;
+  --orange:#C97A3A;--orange-l:#FAF0E6;--red:#B05252;--red-l:#F7EBEB;
   --purple:#7A5FAA;--purple-l:#F0EBFA;
-
-  --shadow:0 2px 16px rgba(0,0,0,.08);
-  --shadow-lg:0 8px 40px rgba(0,0,0,.15);
+  --shadow:0 2px 16px rgba(107,24,50,.08);--shadow-lg:0 8px 40px rgba(107,24,50,.15);
   --r:14px;--rs:9px;--tr:all .2s ease;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+body{
+  font-family:'Outfit',sans-serif;
+  background:linear-gradient(180deg,#F6F7F2 60%, #EAF0C0 100%);
+  color:var(--text);
+  min-height:100vh;
+  overflow-x:hidden
+}
 
 /* ── LOGIN ── */
-#auth{min-height:100vh;background:linear-gradient(135deg,#000 0%,var(--wine-d) 55%,var(--wine) 100%);display:flex;align-items:center;justify-content:center;padding:20px}
+#auth{
+  min-height:100vh;
+  background:linear-gradient(135deg,#000 0%, #4A1024 55%, #8FAF1A 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px
+}
 .login-box{background:#fff;border-radius:24px;padding:48px 40px;width:100%;max-width:420px;box-shadow:0 24px 80px rgba(0,0,0,.3)}
 .login-logo{text-align:center;margin-bottom:28px}.login-logo img{height:56px;object-fit:contain}
-.login-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;color:var(--wine-d);text-align:center;margin-bottom:4px}
+.login-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;color:var(--wine);text-align:center;margin-bottom:4px}
 .login-sub{font-size:13px;color:var(--text3);text-align:center;margin-bottom:24px}
-.login-err{background:var(--red-l);color:var(--red);border:1px solid #e0b0b0;border-radius:8px;padding:10px 14px;font-size:13px;margin-bottom:14px;display:none}
-.lf-label{font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.6px;display:block;margin-bottom:6px;margin-top:14px}
-.lf-input{width:100%;padding:12px 15px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:'Outfit',sans-serif;color:var(--text);background:var(--bg);outline:none;transition:var(--tr)}
-.lf-input:focus{border-color:var(--wine);box-shadow:0 0 0 3px rgba(183,194,27,.2)}
-.login-btn{width:100%;padding:13px;background:linear-gradient(135deg,var(--wine),var(--wine-m));color:#000;border:none;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;transition:var(--tr);margin-top:18px}
-.login-btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.25)}
-.login-btn-sec{width:100%;padding:11px;background:transparent;color:var(--wine-d);border:1.5px solid var(--border);border-radius:10px;font-size:13px;font-weight:500;cursor:pointer;margin-top:8px}
-.login-btn-sec:hover{background:var(--wine-l)}
 
 /* ── APP ── */
 .hidden{display:none!important}
 #app{display:flex;height:100vh;overflow:hidden}
 
 /* ── SIDEBAR ── */
-.sidebar{width:248px;min-width:248px;background:linear-gradient(180deg,#000 0%,var(--wine-d) 100%);display:flex;flex-direction:column}
+.sidebar{
+  width:248px;
+  min-width:248px;
+  background:linear-gradient(180deg,#000 0%, #8FAF1A 100%);
+  display:flex;
+  flex-direction:column;
+  z-index:10
+}
 .s-logo{padding:18px 16px 14px;border-bottom:1px solid rgba(255,255,255,.12)}
-.s-logo img{height:42px;filter:brightness(0) invert(1)}
-.s-nav{flex:1;padding:14px 10px}
-.ni{display:flex;align-items:center;gap:10px;padding:9px 14px;border-radius:10px;font-size:13.5px;color:rgba(255,255,255,.7);cursor:pointer}
-.ni:hover{background:rgba(255,255,255,.1);color:#fff}
-.ni.active{background:rgba(255,255,255,.2);color:#fff}
+.s-logo img{height:42px;object-fit:contain;max-width:180px;filter:brightness(0) invert(1)}
+.s-nav{flex:1;padding:14px 10px;overflow-y:auto}
 
 /* ── MAIN ── */
-.main{flex:1;overflow-y:auto;background:var(--bg)}
-.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 28px;display:flex;align-items:center}
-.tb-title{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--wine-d)}
+.main{flex:1;overflow-y:auto;background:transparent}
+.topbar{
+  background:linear-gradient(90deg,#fff 70%, #EAF0C0 100%);
+  border-bottom:1px solid var(--border);
+  padding:14px 28px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  position:sticky;
+  top:0;
+  z-index:5
+}
 
-/* ── BUTTONS ── */
-.btn-p{background:linear-gradient(135deg,var(--wine),var(--wine-m));color:#000}
-.btn-p:hover{box-shadow:0 4px 14px rgba(0,0,0,.2)}
-
-/* ── TABLE HOVER ── */
-.tbl-row:hover{background:var(--wine-l)}
-
-/* ── MODALS ── */
-.modal-title{color:var(--wine-d)}
-.modal-close:hover{background:var(--wine-l);color:var(--wine-d)}
+/* ── TABLE ── */
+.tbl-row:hover{background:#EAF0C0}
 
 /* ── CALENDAR ── */
-.cal-dn.today{background:var(--wine);color:#000}
+.cal-cell:hover{background:#EAF0C0}
 
-/* ── TAGS ── */
-.ptag{background:var(--wine-l);color:var(--wine-d)}
-
-/* ── ALERT ── */
-.alert-bar{background:var(--wine-l);color:var(--wine-d)}
-
-/* ── FAB ── */
-.fab{background:linear-gradient(135deg,var(--wine),var(--wine-m));color:#000}
-.fab:hover{box-shadow:0 10px 32px rgba(0,0,0,.3)}
+/* ── MODALS ── */
+.overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:100;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  backdrop-filter:blur(4px)
+}
