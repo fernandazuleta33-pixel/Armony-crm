@@ -79,7 +79,9 @@ body{
 
 /* ── SIDEBAR ── */
 .sidebar{width:248px;min-width:248px;background:linear-gradient(180deg,#111208 0%,#2A3309 100%);display:flex;flex-direction:column;z-index:10}
-.s-logo{padding:18px 16px 14px;border-bottom:1px solid rgba(255,255,255,.12)}
+.s-logo img {height: 36px;max-width: 100%;object-fit: contain;filter: brightness(0) invert(1);}
+.s-logo {padding: 18px 16px 14px;  border-bottom: 1px solid rgba(255,255,255,.12);  overflow: hidden;  /* ← esto es lo que evita que se desborde */
+}
 .s-nav{flex:1;padding:14px 10px;overflow-y:auto}
 .nav-sec{margin-bottom:20px}
 .nav-lbl{font-size:9.5px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1.2px;padding:0 12px;margin-bottom:6px}
