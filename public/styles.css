@@ -1,44 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root{
-  --wine:#6B1832;--wine-d:#4A1024;--wine-m:#8B2040;--wine-l:#F5EBF0;
-  --bg:#F7F4F8;--surface:#fff;--surface2:#F0ECF3;--border:#E4DDE9;--border2:#CFC5D8;
-  --text:#1E1018;--text2:#7A6575;--text3:#B0A0AA;
+  --wine:#9BAD1F;--wine-d:#6B7A12;--wine-m:#B5CC22;--wine-l:#F4F6E0;
+  --bg:#F5F6F0;--surface:#fff;--surface2:#EEEFD8;--border:#DDE0C5;--border2:#CACF9A;
+  --text:#1A1E08;--text2:#5A6040;--text3:#9AA070;
   --gold:#C9A96E;--gold-l:#F5EDD9;
   --green:#5B8A5A;--green-l:#EBF3EB;--blue:#4A7FA5;--blue-l:#E8F0F7;
   --orange:#C97A3A;--orange-l:#FAF0E6;--red:#B05252;--red-l:#F7EBEB;
   --purple:#7A5FAA;--purple-l:#F0EBFA;
-  --shadow:0 2px 16px rgba(107,24,50,.08);--shadow-lg:0 8px 40px rgba(107,24,50,.15);
+  --shadow:0 2px 16px rgba(107,130,18,.10);--shadow-lg:0 8px 40px rgba(107,130,18,.18);
   --r:14px;--rs:9px;--tr:all .2s ease;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
-  font-family:'Outfit',sans-serif;
-  background:linear-gradient(135deg,#0E0E0E 0%, #1A1A1A 60%, #9FBF1F 100%);
-  color:var(--text);
-  min-height:100vh;
-  overflow-x:hidden;
+  font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden
 }
 
 /* ── LOGIN ── */
 #auth{
   min-height:100vh;
-  background:linear-gradient(160deg,#000 0%, #0f0f0f 40%, #1c1c1c 70%, #9FBF1F 100%);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
+  background:linear-gradient(135deg,#1A1A0F 0%,#3D4D0A 55%,#6B7A12 100%);display:flex;align-items:center;justify-content:center;padding:20px
 }
-.login-box{
-  background:rgba(255,255,255,0.95);
-  backdrop-filter:blur(6px);
-  border-radius:24px;
-  padding:48px 40px;
-  width:100%;
-  max-width:420px;
-  box-shadow:0 30px 90px rgba(0,0,0,.45);
-  border:1px solid rgba(255,255,255,0.2);
-}
+.login-box{background:#fff;border-radius:24px;padding:48px 40px;width:100%;max-width:420px;box-shadow:0 24px 80px rgba(0,0,0,.3)}
 .login-logo{text-align:center;margin-bottom:28px}.login-logo img{height:56px;object-fit:contain}
 .login-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;color:var(--wine);text-align:center;margin-bottom:4px}
 .login-sub{font-size:13px;color:var(--text3);text-align:center;margin-bottom:24px}
@@ -95,9 +78,8 @@ body{
 #app{display:flex;height:100vh;overflow:hidden}
 
 /* ── SIDEBAR ── */
-.sidebar{width:248px;min-width:248px;background:linear-gradient(180deg,var(--wine-d) 0%,var(--wine) 100%);display:flex;flex-direction:column;z-index:10}
+.sidebar{width:248px;min-width:248px;background:linear-gradient(180deg,#111208 0%,#2A3309 100%);display:flex;flex-direction:column;z-index:10}
 .s-logo{padding:18px 16px 14px;border-bottom:1px solid rgba(255,255,255,.12)}
-.s-logo img{height:42px;object-fit:contain;max-width:180px;filter:brightness(0) invert(1)}
 .s-nav{flex:1;padding:14px 10px;overflow-y:auto}
 .nav-sec{margin-bottom:20px}
 .nav-lbl{font-size:9.5px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1.2px;padding:0 12px;margin-bottom:6px}
@@ -116,10 +98,10 @@ body{
 
 /* ── MAIN ── */
 .main{flex:1;overflow-y:auto;background:var(--bg)}
-.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:5;box-shadow:0 1px 8px rgba(107,24,50,.06)}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:5;box-shadow:0 1px 8px rgba(107,130,18,.06)}
 .tb-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;flex:1;color:var(--wine-d)}
 .searchbox{display:flex;align-items:center;gap:8px;background:var(--surface2);border:1.5px solid var(--border);border-radius:28px;padding:8px 16px;min-width:250px;transition:var(--tr)}
-.searchbox:focus-within{border-color:var(--wine);box-shadow:0 0 0 3px rgba(107,24,50,.08)}
+.searchbox:focus-within{border-color:var(--wine);box-shadow:0 0 0 3px rgba(107,130,18,.08)}
 .searchbox input{background:none;border:none;outline:none;font-size:13px;color:var(--text);font-family:'Outfit',sans-serif;width:100%}
 .searchbox input::placeholder{color:var(--text3)}
 
