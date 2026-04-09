@@ -13,7 +13,7 @@
 <div id="auth">
   <div class="login-box">
     <div class="login-logo"><img src="logo.png" alt="Horizonte"></div>
-    <div class="login-title">Bienvenido al CRM</div>
+    <div class="login-title">CRM Canal Online</div>
     <div class="login-sub">Ingresa tus credenciales para continuar</div>
     <div class="login-err" id="login-err"></div>
     <label class="lf-label">Email</label>
@@ -22,13 +22,22 @@
     <input class="lf-input" id="password" type="password" placeholder="••••••••" onkeydown="if(event.key==='Enter')login()">
     <button class="login-btn" onclick="login()">Ingresar al sistema →</button>
     <button class="login-btn-sec" onclick="register()">Crear cuenta nueva</button>
+    <p style="
+  text-align: center;
+  font-size: 11px;
+  color: #9AA070;
+  margin-top: 24px;
+  letter-spacing: 0.3px;
+">
+  Desarrollado por <span style="color: #6B7A12; font-weight: 600;">Fernanda Zuleta</span>
+</p>
   </div>
 </div>
 
 <!-- ═══ APP ═══ -->
 <div id="app" class="hidden">
 <aside class="sidebar">
-  <div class="s-logo"><img src="logo.png" alt="Armony"></div>
+  <div class="s-logo"><img src="logo.png" alt="Horizonte"></div>
   <nav class="s-nav">
     <div class="nav-sec">
       <div class="nav-lbl">Principal</div>
@@ -209,12 +218,12 @@
     </div>
     <div class="fgroup full"><label class="flbl">Productos de interés</label>
       <div class="prod-grid" id="prod-sel-nc">
-        <div class="po" onclick="toggleProd(this)">Panel Japonés</div><div class="po" onclick="toggleProd(this)">Sheer</div>
-        <div class="po" onclick="toggleProd(this)">Enrollables</div><div class="po" onclick="toggleProd(this)">Pers. Verticales</div>
-        <div class="po" onclick="toggleProd(this)">Cortina Trad.</div><div class="po" onclick="toggleProd(this)">Onda Serena</div>
-        <div class="po" onclick="toggleProd(this)">Papel Colgadura</div><div class="po" onclick="toggleProd(this)">Línea Hogar</div>
-        <div class="po" onclick="toggleProd(this)">Línea Hotelera</div><div class="po" onclick="toggleProd(this)">Sala Comedores</div>
-        <div class="po" onclick="toggleProd(this)">Colchones</div><div class="po" onclick="toggleProd(this)">Otros</div>
+        <div class="po" onclick="toggleProd(this)">Panel Japonés</div><div class="po" onclick="toggleProd(this)">Sheer Bombay</div>
+        <div class="po" onclick="toggleProd(this)">Enrollable</div><div class="po" onclick="toggleProd(this)">Pers. Verticale</div>
+        <div class="po" onclick="toggleProd(this)">Macrovertical</div><div class="po" onclick="toggleProd(this)">Onda Perfecta</div>
+        <div class="po" onclick="toggleProd(this)">Papel Colgadura</div><div class="po" onclick="toggleProd(this)">Accesorios</div>
+        <div class="po" onclick="toggleProd(this)">Minipersiana</div><div class="po" onclick="toggleProd(this)">Macropersiana</div>
+        <div class="po" onclick="toggleProd(this)">Romana</div><div class="po" onclick="toggleProd(this)">Otros</div>
       </div>
     </div>
     <div class="fgroup full"><label class="flbl">Asignar asesor</label><div class="asesor-grid" id="asesor-sel-nc"></div></div>
@@ -252,12 +261,12 @@
     </div>
     <div class="fgroup full"><label class="flbl">Productos</label>
       <div class="prod-grid" id="edit-prod-sel">
-        <div class="po" onclick="toggleProd(this)">Panel Japonés</div><div class="po" onclick="toggleProd(this)">Sheer</div>
-        <div class="po" onclick="toggleProd(this)">Enrollables</div><div class="po" onclick="toggleProd(this)">Pers. Verticales</div>
-        <div class="po" onclick="toggleProd(this)">Cortina Trad.</div><div class="po" onclick="toggleProd(this)">Onda Serena</div>
-        <div class="po" onclick="toggleProd(this)">Papel Colgadura</div><div class="po" onclick="toggleProd(this)">Línea Hogar</div>
-        <div class="po" onclick="toggleProd(this)">Línea Hotelera</div><div class="po" onclick="toggleProd(this)">Sala Comedores</div>
-        <div class="po" onclick="toggleProd(this)">Colchones</div><div class="po" onclick="toggleProd(this)">Otros</div>
+        <div class="po" onclick="toggleProd(this)">Panel Japonés</div><div class="po" onclick="toggleProd(this)">Sheer Bombay</div>
+        <div class="po" onclick="toggleProd(this)">Enrollable</div><div class="po" onclick="toggleProd(this)">Pers. Verticale</div>
+        <div class="po" onclick="toggleProd(this)">Macrovertical</div><div class="po" onclick="toggleProd(this)">Onda Perfecta</div>
+        <div class="po" onclick="toggleProd(this)">Papel Colgadura</div><div class="po" onclick="toggleProd(this)">Accesorios</div>
+        <div class="po" onclick="toggleProd(this)">Minipersiana</div><div class="po" onclick="toggleProd(this)">Macropersiana</div>
+        <div class="po" onclick="toggleProd(this)">Romana</div><div class="po" onclick="toggleProd(this)">Otros</div>
       </div>
     </div>
     <div class="fgroup full"><label class="flbl">Notas</label><textarea class="fi fi-ta" name="notas" id="edit-notas"></textarea></div>
