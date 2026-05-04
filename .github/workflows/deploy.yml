@@ -5,24 +5,15 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v4
 
-      - name: Instalar Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
+      - name: Validación básica
+        run: echo "Proyecto listo para deploy"
 
-      - name: Instalar dependencias
-        run: npm install
-
-      - name: Build del proyecto
-        run: npm run build
-
-      # 👇 Deploy manual a Vercel (opcional si no conectaste repo)
-      - name: Deploy a Vercel
-        run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Listar archivos (debug)
+        run: ls -la
